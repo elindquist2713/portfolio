@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css"/>
+   
+   <style>
+      @media (max-width: 400px) {
+              body{
+                  background-color: chocolate;
+              }
+          }
+      .animates{
+                height: 100px;
+                width: 100px;
+                background-color: dodgerblue;
+                position: relative;
+                animation-name: animation1;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-delay: 1;
+                animation-iteration-count: infinite;
+
+            }
+
+       @keyframes animation1 {
+                0%  {background-color: dodgerblue; left: 0px; top: -538px;}
+                25% {background-color: yellow; left: 370px; top: -538px;}
+                50% {background-color: red; left: 370px; top: -100px;}
+                75% {background-color: green; left: 0px; top: -100px;}
+                100%  {background-color: dodgerblue; left: 0px; top: -538px;}
+            }
+  </style>
+    <div id="boxexample2">
+
+    <div class="topnav">
+        <a href="home.html">Home </a>
+        <a href="big.html">Big dogs</a>
+        <a href="small.html">Small dogs</a>
+      </div>
+    
+    <h1>Small Dogs</h1>
+    <div id="boxexample">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/chihuahua-dog-running-across-grass-royalty-free-image-1580743445.jpg?crop=0.66658xw:1xh;center,top&resize=980:*" alt="dog">
+    <div class = "animates"></div>
+  </div>
+</div>
+</html>
